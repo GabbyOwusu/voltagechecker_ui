@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TopTray extends StatelessWidget {
-  const TopTray({
-    Key key,
-  }) : super(key: key);
+ 
 
   @override
   Widget build(BuildContext context) {

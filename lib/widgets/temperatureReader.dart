@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
 class TemperatureReader extends StatelessWidget {
-  const TemperatureReader({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Padding(
