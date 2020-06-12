@@ -85,16 +85,15 @@ class _MyHomePageState extends State<MyHomePage> {
                     Container(
                       height: 420,
                       child: GridView.builder(
-                          physics: NeverScrollableScrollPhysics(),
-                          gridDelegate:
-                              SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 2,
-                                  mainAxisSpacing: 30,
-                                  crossAxisSpacing: 30),
-                          itemCount: 4,
-                          itemBuilder: (context, index) => GridItem(
-                                cardDetails: provider.details[index],
-                              )),
+                        physics: NeverScrollableScrollPhysics(),
+                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 2,
+                            mainAxisSpacing: 30,
+                            crossAxisSpacing: 30),
+                        itemCount: 4,
+                        itemBuilder: (context, index) =>
+                            GridItem(cardDetails: provider.details[index])
+                      ),
                     ),
                   ],
                 ),
