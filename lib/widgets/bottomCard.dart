@@ -11,7 +11,7 @@ class BottomCard extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 170,
-      // padding: EdgeInsets.all(20),
+     
       decoration: BoxDecoration(
         color: Color.fromRGBO(67, 39, 139, 2),
         borderRadius: BorderRadius.only(
