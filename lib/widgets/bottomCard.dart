@@ -68,7 +68,7 @@ class BottomCard extends StatelessWidget {
                   height: 40,
                   width: 40,
                   decoration: BoxDecoration(
-                      color:   Color.fromRGBO(253, 108, 57, 10),
+                      color: Color.fromRGBO(253, 108, 57, 10),
                       borderRadius: BorderRadius.circular(10)),
                   child: Center(
                       child: IconButton(
@@ -93,11 +93,8 @@ class BottomCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   IconButton(
-                    icon: Image(
-                      image: AssetImage('images/home.png'),
-                      color: Colors.grey,
-                      width: 22,
-                    ),
+                    icon: Icon(Icons.home),
+                    color: Color.fromRGBO(67, 39, 139, 2),
                     onPressed: null,
                   ),
                   IconButton(

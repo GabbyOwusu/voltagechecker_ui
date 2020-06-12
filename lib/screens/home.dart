@@ -4,21 +4,16 @@ import 'package:new_ui/widgets/bottomCard.dart';
 import 'package:new_ui/widgets/griditem.dart';
 import 'package:provider/provider.dart';
 
-
 class MyHomePage extends StatefulWidget {
-
-
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  DetailsProvider get provider { 
+  DetailsProvider get provider {
     return Provider.of<DetailsProvider>(context);
-    
-    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,17 +82,20 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                     SizedBox(height: 30),
-
-                   Container(
-      height: 420,
-      child: GridView.builder(
-        physics: NeverScrollableScrollPhysics(),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2, mainAxisSpacing: 30, crossAxisSpacing: 30),
-        itemCount: 4,
-        itemBuilder: (context, index) => GridItem(cardDetails: provider.details[index],)
-      ),
-    ),
+                    Container(
+                      height: 420,
+                      child: GridView.builder(
+                          physics: NeverScrollableScrollPhysics(),
+                          gridDelegate:
+                              SliverGridDelegateWithFixedCrossAxisCount(
+                                  crossAxisCount: 2,
+                                  mainAxisSpacing: 30,
+                                  crossAxisSpacing: 30),
+                          itemCount: 4,
+                          itemBuilder: (context, index) => GridItem(
+                                cardDetails: provider.details[index],
+                              )),
+                    ),
                   ],
                 ),
               ),
