@@ -88,8 +88,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         physics: NeverScrollableScrollPhysics(),
                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
-                            mainAxisSpacing: 30,
-                            crossAxisSpacing: 30),
+                            mainAxisSpacing: 20,
+                            crossAxisSpacing: 20),
                         itemCount: 4,
                         itemBuilder: (context, index) =>
                             GridItem(cardDetails: provider.details[index])
