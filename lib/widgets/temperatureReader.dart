@@ -20,9 +20,7 @@ class TemperatureReader extends StatelessWidget {
             alignment: Alignment.center,
             children: <Widget>[
               Container(
-                  width: 280,
-                  height: 2,
-                  color: Color.fromRGBO(67, 39, 139, 9)),
+                  width: 280, height: 2, color: Color.fromRGBO(67, 39, 139, 9)),
               Container(
                 width: 2,
                 height: 280,
@@ -39,11 +37,11 @@ class TemperatureReader extends StatelessWidget {
                     ),
                     boxShadow: [
                       BoxShadow(
-                          color: Color.fromRGBO(67, 39, 139, 9)
-                              .withOpacity(.5),
-                          spreadRadius: -30,
-                          blurRadius: 500,
-                          offset: Offset(-30, 20))
+                        color: Color.fromRGBO(67, 39, 139, 9).withOpacity(.5),
+                        spreadRadius: -30,
+                        blurRadius: 500,
+                        offset: Offset(-30, 20),
+                      ),
                     ]),
                 child: Center(
                   child: RichText(
@@ -56,7 +54,7 @@ class TemperatureReader extends StatelessWidget {
                               fontWeight: FontWeight.bold,
                               color: Colors.black,
                               decoration: TextDecoration.none,
-                              fontSize: 28),
+                              fontSize: 30),
                         ),
                         TextSpan(
                           text: '°C',
