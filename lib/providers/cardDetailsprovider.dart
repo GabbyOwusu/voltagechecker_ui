@@ -13,7 +13,7 @@ class DetailsProvider extends BaseProvider {
         textColor: Colors.white,
       ),
       CardDetails(
-        title: 'Living ROom',
+        title: 'Living Room',
         icon: 'images/couch.png',
         color: Colors.white,
         textColor: Colors.black,
