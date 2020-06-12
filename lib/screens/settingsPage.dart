@@ -14,12 +14,19 @@ class _BedRoomState extends State<BedRoom> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          color: Colors.black,
+        ),
         backgroundColor: Colors.white,
         elevation: 0,
         title: Text(
           'Bed Room',
           style: TextStyle(
-            fontSize: 25,
+            fontSize: 28,
             color: Colors.black,
             fontWeight: FontWeight.bold,
           ),
@@ -133,7 +140,8 @@ class _BedRoomState extends State<BedRoom> {
                 ),
               ),
             ],
-          )
+          ),
+          SizedBox(height: 20)
         ],
       ),
     );
