@@ -11,7 +11,6 @@ class BottomCard extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 170,
-     
       decoration: BoxDecoration(
         color: Color.fromRGBO(67, 39, 139, 2),
         borderRadius: BorderRadius.only(
@@ -53,7 +52,7 @@ class BottomCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(width: 25),
+                SizedBox(width: 10),
                 IconButton(
                   icon: Image(
                     image: AssetImage('images/heart.png'),
@@ -62,7 +61,7 @@ class BottomCard extends StatelessWidget {
                   ),
                   onPressed: () {},
                 ),
-                SizedBox(width: 5),
+                //SizedBox(width: 5),
                 Container(
                   margin: EdgeInsets.only(top: 6),
                   height: 40,
@@ -95,7 +94,7 @@ class BottomCard extends StatelessWidget {
                   IconButton(
                     icon: Icon(Icons.home),
                     color: Color.fromRGBO(67, 39, 139, 2),
-                    onPressed: (){},
+                    onPressed: () {},
                   ),
                   IconButton(
                     icon: Icon(Icons.person_outline),
