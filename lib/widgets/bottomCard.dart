@@ -95,7 +95,7 @@ class BottomCard extends StatelessWidget {
                   IconButton(
                     icon: Icon(Icons.home),
                     color: Color.fromRGBO(67, 39, 139, 2),
-                    onPressed: null,
+                    onPressed: (){},
                   ),
                   IconButton(
                     icon: Icon(Icons.person_outline),
