@@ -14,4 +14,6 @@ class CardDetails {
     this.textColor,
     this.iconColor,
   });
+
+  
 }
