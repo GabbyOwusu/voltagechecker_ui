@@ -3,6 +3,8 @@ import 'package:new_ui/providers/cardDetailsprovider.dart';
 import 'package:new_ui/screens/home.dart';
 import 'package:provider/provider.dart';
 
+import 'providers/roomDetailsProvider.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -14,6 +16,8 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider<DetailsProvider>(
           create: (_) => DetailsProvider(),
+        ), ChangeNotifierProvider<RoomDetailsProvider>(
+          create: (_) => RoomDetailsProvider(),
         )
       ],
       child: MaterialApp(
