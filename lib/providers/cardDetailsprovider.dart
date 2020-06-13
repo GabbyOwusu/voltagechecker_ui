@@ -35,3 +35,5 @@ class DetailsProvider extends BaseProvider {
     ];
   }
 }
+
+
