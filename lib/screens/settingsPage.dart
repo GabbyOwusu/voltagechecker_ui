@@ -1,7 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:new_ui/models/roomDetails.dart';
+import 'package:new_ui/providers/cardDetailsprovider.dart';
+import 'package:new_ui/providers/roomDetailsProvider.dart';
 import 'package:new_ui/widgets/temperatureReader.dart';
 import 'package:new_ui/widgets/topTray.dart';
+import 'package:provider/provider.dart';
 
 class BedRoom extends StatefulWidget {
   @override
@@ -9,6 +13,10 @@ class BedRoom extends StatefulWidget {
 }
 
 class _BedRoomState extends State<BedRoom> {
+  RoomDetailsProvider get provider {
+    return Provider.of<RoomDetailsProvider>(context);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,7 +43,15 @@ class _BedRoomState extends State<BedRoom> {
       body: ListView(
         padding: EdgeInsets.only(top: 20, left: 5, right: 5),
         children: <Widget>[
-          TopTray(),
+          Container(
+            height: 100,
+            child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                itemBuilder: (context, index) =>
+                    TopTray(roomdetails: provider.roomDetails[index]),
+                separatorBuilder: (context, index) => SizedBox(width: 25),
+                itemCount: 5),
+          ),
           SizedBox(height: 10),
           TemperatureReader(),
           SizedBox(height: 40),
